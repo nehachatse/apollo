@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 let doctorController = require('./Controllers/doctor.controller');
 let appoinmentController = require('./Controllers/appoinment.controller');
-const DB_URL = 'mongodb+srv://neha:neha123@cluster0.3eq5o.mongodb.net/library?retryWrites=true&w=majority'
+const DB_URL = env.process.DB_URL;
 
 let app = express();
 app.use(express.json());
